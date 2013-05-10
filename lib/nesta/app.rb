@@ -12,7 +12,7 @@ require File.expand_path('navigation', File.dirname(__FILE__))
 require File.expand_path('overrides', File.dirname(__FILE__))
 require File.expand_path('path', File.dirname(__FILE__))
 
-Encoding.default_external = 'utf-8' if (RUBY_VERSION.gsub(".").to_i) > 193
+Encoding.default_external = 'utf-8' if (RUBY_VERSION.gsub(".", "").to_i) > 193
 
 module Nesta
   class App < Sinatra::Base
